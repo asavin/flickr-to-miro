@@ -7,7 +7,6 @@ Fetch photos from a **Flickr album** and place them on a **Miro board** as neat,
 * Pulls all photos from a given Flickr **photoset (album)**.
 * Places each as a **tile**: image + light banner + text with a **clickable Flickr URL**.
 * Lays tiles out in a grid using absolute positions.
-* **Groups** each tile’s parts so they move together on the board.
 * Chooses sensible image sizes (prefers `url_c`/`url_l`).
 
 ## Requirements
@@ -63,7 +62,6 @@ Or put vars in a `.env`/shell profile and source it.
   * Position = `START_X + col*CELL_W`, `START_Y + row*CELL_H`
 * Image is nudged slightly upward to make room for the banner.
 * Banner + text sit near the bottom of the tile.
-* The three items are **grouped** (via Miro API) so they move as one.
 
 ## Notes & tips
 
